@@ -14,7 +14,10 @@ namespace OOO_Aromatny_Mir.Classes
         public static Entities.User CurrentUser;
         public enum UserRole { Администратор, Менеджер, Клиент };
         public static UserRole CurrentUserRole;
-        
+        /// <summary>
+        /// Установить роль для текущего пользователя из БД
+        /// </summary>
+        /// <param name="role"></param>
         public static void SetRole(string role)
         {
             CurrentUserRole = (UserRole)Enum.Parse(typeof(UserRole), role);

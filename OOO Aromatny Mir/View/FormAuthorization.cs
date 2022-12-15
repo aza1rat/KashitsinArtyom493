@@ -16,6 +16,9 @@ namespace OOO_Aromatny_Mir
     {
         private String rigthCaptchaText;
         private int secondsOfBlock;
+        /// <summary>
+        /// Инициализация приложения. Создание связи с БД
+        /// </summary>
         public FormAuthorization()
         {
             InitializeComponent();
@@ -36,13 +39,19 @@ namespace OOO_Aromatny_Mir
                     MessageBoxIcon.Error);
             }
         }
-
+        /// <summary>
+        /// Создание капчи и ее отрисовка
+        /// </summary>
         private void SetCaptcha()
         {
             rigthCaptchaText = GenerateCaptcha(4);
             DrawCaptcha(rigthCaptchaText);
         }
-
+        /// <summary>
+        /// Создание капчи из случайного набора символов
+        /// </summary>
+        /// <param name="size"></param>
+        /// <returns></returns>
         private string GenerateCaptcha(int size)
         {
             string symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
@@ -55,7 +64,10 @@ namespace OOO_Aromatny_Mir
             }
             return generated;
         }
-
+        /// <summary>
+        /// Отрисовка капчи
+        /// </summary>
+        /// <param name="captcha"></param>
         private void DrawCaptcha(string captcha)
         {
             int fontSize = 18;
@@ -76,12 +88,20 @@ namespace OOO_Aromatny_Mir
             captchaDraw.Flush();
             PictureBoxCaptcha.Image = captchaPlace;
         }
-
+        /// <summary>
+        /// Выход из приложения
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonAuthExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// Поиск пользователя по логину и паролю. Определение роли
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
             if (rigthCaptchaText != null && rigthCaptchaText != TextBoxCaptcha.Text)
@@ -118,7 +138,9 @@ namespace OOO_Aromatny_Mir
             Helper.SetRole(userRole.RoleName);
             ToCatalogue();
         }
-
+        /// <summary>
+        /// Отправка к форме каталога
+        /// </summary>
         private void ToCatalogue()
         {
             FormCatalogue formCatalogue = new FormCatalogue();
@@ -128,7 +150,11 @@ namespace OOO_Aromatny_Mir
             TextBoxPassword.Text = "";
             this.Show();
         }
-
+        /// <summary>
+        /// Уничтожение связи с БД при закрытии приложения
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormAuthorization_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -148,7 +174,11 @@ namespace OOO_Aromatny_Mir
             }
             
         }
-
+        /// <summary>
+        /// Гостевая авторизация
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonGuestLogin_Click(object sender, EventArgs e)
         {
             if (rigthCaptchaText != null && rigthCaptchaText != TextBoxCaptcha.Text)
@@ -162,7 +192,11 @@ namespace OOO_Aromatny_Mir
             Helper.CurrentUser = null;
             ToCatalogue();
         }
-
+        /// <summary>
+        /// Блокировка системы на 10 секунд при неудачном вводе капчи
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TimerCaptha_Tick(object sender, EventArgs e)
         {
             

@@ -34,6 +34,9 @@
             this.LabelTempNameForm = new System.Windows.Forms.Label();
             this.ButtonProductBack = new System.Windows.Forms.Button();
             this.TablePanelTempDown = new System.Windows.Forms.TableLayoutPanel();
+            this.ButtonDeleteProduct = new System.Windows.Forms.Button();
+            this.ButtonChangeProduct = new System.Windows.Forms.Button();
+            this.ButtonAddProduct = new System.Windows.Forms.Button();
             this.TablePanelProdMain = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,11 +63,8 @@
             this.TextBoxDescription = new System.Windows.Forms.TextBox();
             this.PictureBoxProduct = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ButtonChangeImage = new System.Windows.Forms.Button();
             this.ButtonDefaultImage = new System.Windows.Forms.Button();
-            this.ButtonAddProduct = new System.Windows.Forms.Button();
-            this.ButtonChangeProduct = new System.Windows.Forms.Button();
-            this.ButtonDeleteProduct = new System.Windows.Forms.Button();
+            this.ButtonChangeImage = new System.Windows.Forms.Button();
             this.TablePanelTempUpper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).BeginInit();
             this.TablePanelTempDown.SuspendLayout();
@@ -144,10 +144,46 @@
             this.TablePanelTempDown.Name = "TablePanelTempDown";
             this.TablePanelTempDown.RowCount = 1;
             this.TablePanelTempDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TablePanelTempDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.TablePanelTempDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TablePanelTempDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.TablePanelTempDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.TablePanelTempDown.Size = new System.Drawing.Size(674, 40);
             this.TablePanelTempDown.TabIndex = 1;
+            // 
+            // ButtonDeleteProduct
+            // 
+            this.ButtonDeleteProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonDeleteProduct.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.ButtonDeleteProduct.Location = new System.Drawing.Point(451, 3);
+            this.ButtonDeleteProduct.Name = "ButtonDeleteProduct";
+            this.ButtonDeleteProduct.Size = new System.Drawing.Size(220, 34);
+            this.ButtonDeleteProduct.TabIndex = 3;
+            this.ButtonDeleteProduct.Text = "Удалить";
+            this.ButtonDeleteProduct.UseVisualStyleBackColor = true;
+            this.ButtonDeleteProduct.Click += new System.EventHandler(this.ButtonDeleteProduct_Click);
+            // 
+            // ButtonChangeProduct
+            // 
+            this.ButtonChangeProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonChangeProduct.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.ButtonChangeProduct.Location = new System.Drawing.Point(227, 3);
+            this.ButtonChangeProduct.Name = "ButtonChangeProduct";
+            this.ButtonChangeProduct.Size = new System.Drawing.Size(218, 34);
+            this.ButtonChangeProduct.TabIndex = 2;
+            this.ButtonChangeProduct.Text = "Изменить";
+            this.ButtonChangeProduct.UseVisualStyleBackColor = true;
+            this.ButtonChangeProduct.Click += new System.EventHandler(this.ButtonChangeProduct_Click);
+            // 
+            // ButtonAddProduct
+            // 
+            this.ButtonAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonAddProduct.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.ButtonAddProduct.Location = new System.Drawing.Point(3, 3);
+            this.ButtonAddProduct.Name = "ButtonAddProduct";
+            this.ButtonAddProduct.Size = new System.Drawing.Size(218, 34);
+            this.ButtonAddProduct.TabIndex = 1;
+            this.ButtonAddProduct.Text = "Добавить";
+            this.ButtonAddProduct.UseVisualStyleBackColor = true;
+            this.ButtonAddProduct.Click += new System.EventHandler(this.ButtonAddProduct_Click);
             // 
             // TablePanelProdMain
             // 
@@ -473,18 +509,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(220, 47);
             this.tableLayoutPanel1.TabIndex = 24;
             // 
-            // ButtonChangeImage
-            // 
-            this.ButtonChangeImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonChangeImage.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.ButtonChangeImage.Location = new System.Drawing.Point(3, 3);
-            this.ButtonChangeImage.Name = "ButtonChangeImage";
-            this.ButtonChangeImage.Size = new System.Drawing.Size(104, 41);
-            this.ButtonChangeImage.TabIndex = 0;
-            this.ButtonChangeImage.Text = "Добавить";
-            this.ButtonChangeImage.UseVisualStyleBackColor = true;
-            this.ButtonChangeImage.Click += new System.EventHandler(this.ButtonChangeImage_Click);
-            // 
             // ButtonDefaultImage
             // 
             this.ButtonDefaultImage.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -497,41 +521,17 @@
             this.ButtonDefaultImage.UseVisualStyleBackColor = true;
             this.ButtonDefaultImage.Click += new System.EventHandler(this.ButtonDefaultImage_Click);
             // 
-            // ButtonAddProduct
+            // ButtonChangeImage
             // 
-            this.ButtonAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonAddProduct.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.ButtonAddProduct.Location = new System.Drawing.Point(3, 3);
-            this.ButtonAddProduct.Name = "ButtonAddProduct";
-            this.ButtonAddProduct.Size = new System.Drawing.Size(218, 34);
-            this.ButtonAddProduct.TabIndex = 1;
-            this.ButtonAddProduct.Text = "Добавить";
-            this.ButtonAddProduct.UseVisualStyleBackColor = true;
-            this.ButtonAddProduct.Click += new System.EventHandler(this.ButtonAddProduct_Click);
-            // 
-            // ButtonChangeProduct
-            // 
-            this.ButtonChangeProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonChangeProduct.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.ButtonChangeProduct.Location = new System.Drawing.Point(227, 3);
-            this.ButtonChangeProduct.Name = "ButtonChangeProduct";
-            this.ButtonChangeProduct.Size = new System.Drawing.Size(218, 34);
-            this.ButtonChangeProduct.TabIndex = 2;
-            this.ButtonChangeProduct.Text = "Изменить";
-            this.ButtonChangeProduct.UseVisualStyleBackColor = true;
-            this.ButtonChangeProduct.Click += new System.EventHandler(this.ButtonChangeProduct_Click);
-            // 
-            // ButtonDeleteProduct
-            // 
-            this.ButtonDeleteProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonDeleteProduct.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.ButtonDeleteProduct.Location = new System.Drawing.Point(451, 3);
-            this.ButtonDeleteProduct.Name = "ButtonDeleteProduct";
-            this.ButtonDeleteProduct.Size = new System.Drawing.Size(220, 34);
-            this.ButtonDeleteProduct.TabIndex = 3;
-            this.ButtonDeleteProduct.Text = "Удалить";
-            this.ButtonDeleteProduct.UseVisualStyleBackColor = true;
-            this.ButtonDeleteProduct.Click += new System.EventHandler(this.ButtonDeleteProduct_Click);
+            this.ButtonChangeImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonChangeImage.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.ButtonChangeImage.Location = new System.Drawing.Point(3, 3);
+            this.ButtonChangeImage.Name = "ButtonChangeImage";
+            this.ButtonChangeImage.Size = new System.Drawing.Size(104, 41);
+            this.ButtonChangeImage.TabIndex = 0;
+            this.ButtonChangeImage.Text = "Добавить";
+            this.ButtonChangeImage.UseVisualStyleBackColor = true;
+            this.ButtonChangeImage.Click += new System.EventHandler(this.ButtonChangeImage_Click);
             // 
             // FormChangeProduct
             // 

@@ -17,11 +17,16 @@ namespace OOO_Aromatny_Mir
     public partial class FormCatalogue : Form
     {
         private List<Entities.Product> products;
+
         public FormCatalogue()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Загрузка формы. Отображение текущего пользователя. Подготовка сортировочных полей
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCatalogue_Load(object sender, EventArgs e)
         {
             if (Helper.CurrentUser is null)
@@ -50,20 +55,31 @@ namespace OOO_Aromatny_Mir
             ComboBoxCategory.SelectedIndex = 0;
             ComboBoxDiscount.SelectedIndex = 0;
         }
-
+        /// <summary>
+        /// Метод, определяющий, есть ли в названии товара определенные символы
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="letters"></param>
+        /// <returns></returns>
         private bool IsHaveLetter(string str, string letters)
         {
             if (String.IsNullOrEmpty(str))
                 return true;
             return str.Contains(letters);
         }
-
+        /// <summary>
+        /// Получение id выбранной категории
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         private int GetCategoryID(string value)
         {
             var category = Helper.ModelDB.Category.Where(c => c.CategoryName == value).First();
             return category.CategoryID;
         }
-
+        /// <summary>
+        /// Обновление таблицы. Отображение товаров
+        /// </summary>
         private void UpdateGrid()
         {
             DGVCatalogue.Rows.Clear();
@@ -100,7 +116,9 @@ namespace OOO_Aromatny_Mir
                 MessageBox.Show("Товаров не найдено","Поиск товаров", MessageBoxButtons.OK,MessageBoxIcon.Information);
             LabelProductCount.Text = $"Показано {DGVCatalogue.RowCount} из {Helper.ModelDB.Product.Count()}";
         }
-
+        /// <summary>
+        /// Отправление запроса на сортировку товаров
+        /// </summary>
         private void GetFromDB()
         {
             if (ComboBoxCategory.SelectedItem is null || ComboBoxCost.SelectedItem == null || ComboBoxDiscount.SelectedItem == null)
@@ -128,22 +146,40 @@ namespace OOO_Aromatny_Mir
             products = Helper.ModelDB.Product.SqlQuery(sqlCommand).ToList();
             UpdateGrid();
         }
-
+        /// <summary>
+        /// Сортировка товаров после изменения соответствующих полей
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ComboBoxCost_SelectedValueChanged(object sender, EventArgs e)
         {
             GetFromDB();
         }
+        /// <summary>
+        /// Сортировка товаров после начала поиска
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void TextBoxSearch_TextChanged(object sender, EventArgs e)
         {
             GetFromDB();
         }
+        /// <summary>
+        /// Закрытие формы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void ButtonCatalogueExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Отправка на форму добавления товара
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonAddNewProduct_Click(object sender, EventArgs e)
         {
             FormChangeProduct formChangeProduct = new FormChangeProduct();
@@ -152,7 +188,11 @@ namespace OOO_Aromatny_Mir
             this.Show();
             FormCatalogue_Load(null, null);
         }
-
+        /// <summary>
+        /// Определение выбранного товара и отправка на форму редактирования товара
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DGVCatalogue_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)

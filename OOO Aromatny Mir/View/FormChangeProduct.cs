@@ -17,13 +17,21 @@ namespace OOO_Aromatny_Mir
     public partial class FormChangeProduct : Form
     {
         private Product selectedProduct;
+        /// <summary>
+        /// Инициализация пустой формы для добавления товара
+        /// </summary>
         public FormChangeProduct()
         {
             InitializeComponent();
             GetStatementsFromDB();
             PictureBoxProduct.Image = Resources.picture;
+            ButtonChangeProduct.Enabled = false;
+            ButtonDeleteProduct.Enabled = false;
         }
-
+        /// <summary>
+        /// Инициализация формы с заполненными данными выбранного товара
+        /// </summary>
+        /// <param name="article"></param>
         public FormChangeProduct(string article)
         {
             InitializeComponent();
@@ -53,14 +61,21 @@ namespace OOO_Aromatny_Mir
             }
             else
                 PictureBoxProduct.Image = (Bitmap)Resources.picture;
+            ButtonAddProduct.Enabled = false;
         }
-
+        /// <summary>
+        /// Закрытие формы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonProductBack_Click(object sender, EventArgs e)
         {
             this.Close();
 
         }
-
+        /// <summary>
+        /// Получение данных для полей с возможностью выбора
+        /// </summary>
         private void GetStatementsFromDB()
         {
             ComboBoxCategory.DataSource = Helper.ModelDB.Category.ToList();
@@ -80,7 +95,10 @@ namespace OOO_Aromatny_Mir
             ComboBoxUnit.ValueMember = "UnitID";
             ComboBoxUnit.SelectedIndex = 0;
         }
-
+        /// <summary>
+        /// Проверка корректности введенных данных товара
+        /// </summary>
+        /// <returns></returns>
         private Product CheckValidate()
         {
             Product changeProduct = new Product();
@@ -190,7 +208,11 @@ namespace OOO_Aromatny_Mir
             }
             return changeProduct;
         }
-
+        /// <summary>
+        /// Изменение изображения товара
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeImage_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -201,12 +223,20 @@ namespace OOO_Aromatny_Mir
                 PictureBoxProduct.Image = Image.FromFile(file);
             }
         }
-
+        /// <summary>
+        /// Установка изображения-заглушки
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDefaultImage_Click(object sender, EventArgs e)
         {
             PictureBoxProduct.Image = Resources.picture;
         }
-
+        /// <summary>
+        /// Добавление товара
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonAddProduct_Click(object sender, EventArgs e)
         {
             Product product = CheckValidate();
@@ -225,7 +255,11 @@ namespace OOO_Aromatny_Mir
                 return;
             }
         }
-
+        /// <summary>
+        /// Обновление товара
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeProduct_Click(object sender, EventArgs e)
         {
             Product product = CheckValidate();
@@ -243,7 +277,11 @@ namespace OOO_Aromatny_Mir
                 return;
             }
         }
-
+        /// <summary>
+        /// Удаление товара
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteProduct_Click(object sender, EventArgs e)
         {
             Product product = CheckValidate();

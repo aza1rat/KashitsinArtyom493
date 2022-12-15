@@ -96,6 +96,7 @@ namespace OOO_Aromatny_Mir
                 if (product.ProductDiscount > 15)
                     DGVCatalogue.Rows[viewID].DefaultCellStyle.BackColor = Color.FromArgb(204, 102, 0);
             }
+
             LabelProductCount.Text = $"Показано {DGVCatalogue.RowCount} из {Helper.ModelDB.Product.Count()}";
         }
 

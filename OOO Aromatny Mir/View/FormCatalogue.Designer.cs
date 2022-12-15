@@ -75,23 +75,21 @@
             this.TablePanelTempUpper.Controls.Add(this.LabelUser, 2, 0);
             this.TablePanelTempUpper.Dock = System.Windows.Forms.DockStyle.Top;
             this.TablePanelTempUpper.Location = new System.Drawing.Point(0, 0);
-            this.TablePanelTempUpper.Margin = new System.Windows.Forms.Padding(4);
             this.TablePanelTempUpper.Name = "TablePanelTempUpper";
             this.TablePanelTempUpper.RowCount = 1;
             this.TablePanelTempUpper.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TablePanelTempUpper.Size = new System.Drawing.Size(1312, 60);
+            this.TablePanelTempUpper.Size = new System.Drawing.Size(984, 49);
             this.TablePanelTempUpper.TabIndex = 0;
             // 
             // PictureBoxLogo
             // 
             this.PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PictureBoxLogo.Image = global::OOO_Aromatny_Mir.Properties.Resources.logo;
-            this.PictureBoxLogo.Location = new System.Drawing.Point(4, 4);
-            this.PictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBoxLogo.MaximumSize = new System.Drawing.Size(56, 53);
-            this.PictureBoxLogo.MinimumSize = new System.Drawing.Size(56, 53);
+            this.PictureBoxLogo.Location = new System.Drawing.Point(3, 3);
+            this.PictureBoxLogo.MaximumSize = new System.Drawing.Size(42, 43);
+            this.PictureBoxLogo.MinimumSize = new System.Drawing.Size(42, 43);
             this.PictureBoxLogo.Name = "PictureBoxLogo";
-            this.PictureBoxLogo.Size = new System.Drawing.Size(56, 53);
+            this.PictureBoxLogo.Size = new System.Drawing.Size(42, 43);
             this.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxLogo.TabIndex = 0;
             this.PictureBoxLogo.TabStop = false;
@@ -101,10 +99,9 @@
             this.LabelTempNameForm.AutoSize = true;
             this.LabelTempNameForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelTempNameForm.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabelTempNameForm.Location = new System.Drawing.Point(56, 0);
-            this.LabelTempNameForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabelTempNameForm.Location = new System.Drawing.Point(42, 0);
             this.LabelTempNameForm.Name = "LabelTempNameForm";
-            this.LabelTempNameForm.Size = new System.Drawing.Size(897, 60);
+            this.LabelTempNameForm.Size = new System.Drawing.Size(673, 49);
             this.LabelTempNameForm.TabIndex = 1;
             this.LabelTempNameForm.Text = "Каталог";
             this.LabelTempNameForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,10 +110,9 @@
             // 
             this.ButtonCatalogueExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ButtonCatalogueExit.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonCatalogueExit.Location = new System.Drawing.Point(1111, 4);
-            this.ButtonCatalogueExit.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonCatalogueExit.Location = new System.Drawing.Point(834, 3);
             this.ButtonCatalogueExit.Name = "ButtonCatalogueExit";
-            this.ButtonCatalogueExit.Size = new System.Drawing.Size(197, 52);
+            this.ButtonCatalogueExit.Size = new System.Drawing.Size(147, 43);
             this.ButtonCatalogueExit.TabIndex = 2;
             this.ButtonCatalogueExit.Text = "Назад";
             this.ButtonCatalogueExit.UseVisualStyleBackColor = true;
@@ -127,10 +123,9 @@
             this.LabelUser.AutoSize = true;
             this.LabelUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LabelUser.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabelUser.Location = new System.Drawing.Point(961, 0);
-            this.LabelUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabelUser.Location = new System.Drawing.Point(721, 0);
             this.LabelUser.Name = "LabelUser";
-            this.LabelUser.Size = new System.Drawing.Size(142, 60);
+            this.LabelUser.Size = new System.Drawing.Size(107, 49);
             this.LabelUser.TabIndex = 3;
             this.LabelUser.Text = "Гость";
             // 
@@ -143,21 +138,21 @@
             this.TablePanelTempDown.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.TablePanelTempDown.Controls.Add(this.ButtonAddNewProduct, 1, 0);
             this.TablePanelTempDown.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TablePanelTempDown.Location = new System.Drawing.Point(0, 641);
-            this.TablePanelTempDown.Margin = new System.Windows.Forms.Padding(4);
+            this.TablePanelTempDown.Location = new System.Drawing.Point(0, 521);
             this.TablePanelTempDown.Name = "TablePanelTempDown";
             this.TablePanelTempDown.RowCount = 1;
             this.TablePanelTempDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TablePanelTempDown.Size = new System.Drawing.Size(1312, 49);
+            this.TablePanelTempDown.Size = new System.Drawing.Size(984, 40);
             this.TablePanelTempDown.TabIndex = 1;
             // 
             // ButtonAddNewProduct
             // 
             this.ButtonAddNewProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ButtonAddNewProduct.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.ButtonAddNewProduct.Location = new System.Drawing.Point(440, 3);
+            this.ButtonAddNewProduct.Location = new System.Drawing.Point(330, 2);
+            this.ButtonAddNewProduct.Margin = new System.Windows.Forms.Padding(2);
             this.ButtonAddNewProduct.Name = "ButtonAddNewProduct";
-            this.ButtonAddNewProduct.Size = new System.Drawing.Size(431, 43);
+            this.ButtonAddNewProduct.Size = new System.Drawing.Size(324, 36);
             this.ButtonAddNewProduct.TabIndex = 0;
             this.ButtonAddNewProduct.Text = "Добавить товар";
             this.ButtonAddNewProduct.UseVisualStyleBackColor = true;
@@ -170,37 +165,35 @@
             this.TablePanelCatalogueMain.Controls.Add(this.TablePanelCatalogueSort, 0, 1);
             this.TablePanelCatalogueMain.Controls.Add(this.DGVCatalogue, 0, 2);
             this.TablePanelCatalogueMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TablePanelCatalogueMain.Location = new System.Drawing.Point(0, 60);
-            this.TablePanelCatalogueMain.Margin = new System.Windows.Forms.Padding(4);
+            this.TablePanelCatalogueMain.Location = new System.Drawing.Point(0, 49);
             this.TablePanelCatalogueMain.Name = "TablePanelCatalogueMain";
             this.TablePanelCatalogueMain.RowCount = 3;
             this.TablePanelCatalogueMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TablePanelCatalogueMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.TablePanelCatalogueMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.TablePanelCatalogueMain.Size = new System.Drawing.Size(1312, 581);
+            this.TablePanelCatalogueMain.Size = new System.Drawing.Size(984, 472);
             this.TablePanelCatalogueMain.TabIndex = 2;
             // 
             // LabelProductCount
             // 
             this.LabelProductCount.AutoSize = true;
             this.LabelProductCount.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LabelProductCount.Location = new System.Drawing.Point(4, 0);
-            this.LabelProductCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LabelProductCount.Location = new System.Drawing.Point(3, 0);
             this.LabelProductCount.Name = "LabelProductCount";
-            this.LabelProductCount.Size = new System.Drawing.Size(104, 28);
+            this.LabelProductCount.Size = new System.Drawing.Size(83, 23);
             this.LabelProductCount.TabIndex = 0;
             this.LabelProductCount.Text = "Показано";
             // 
             // TablePanelCatalogueSort
             // 
             this.TablePanelCatalogueSort.ColumnCount = 8;
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.748466F));
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.57669F));
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.202454F));
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.39571F));
-            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.595092F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.1227F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.67894F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.157464F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.21268F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.713701F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.4274F));
+            this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.97546F));
             this.TablePanelCatalogueSort.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.4816F));
             this.TablePanelCatalogueSort.Controls.Add(this.label2, 0, 0);
             this.TablePanelCatalogueSort.Controls.Add(this.label3, 2, 0);
@@ -210,13 +203,12 @@
             this.TablePanelCatalogueSort.Controls.Add(this.ComboBoxDiscount, 3, 0);
             this.TablePanelCatalogueSort.Controls.Add(this.ComboBoxCategory, 5, 0);
             this.TablePanelCatalogueSort.Controls.Add(this.TextBoxSearch, 7, 0);
-            this.TablePanelCatalogueSort.Location = new System.Drawing.Point(4, 62);
-            this.TablePanelCatalogueSort.Margin = new System.Windows.Forms.Padding(4);
+            this.TablePanelCatalogueSort.Location = new System.Drawing.Point(3, 50);
             this.TablePanelCatalogueSort.Name = "TablePanelCatalogueSort";
             this.TablePanelCatalogueSort.RowCount = 1;
             this.TablePanelCatalogueSort.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TablePanelCatalogueSort.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.TablePanelCatalogueSort.Size = new System.Drawing.Size(1304, 50);
+            this.TablePanelCatalogueSort.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.TablePanelCatalogueSort.Size = new System.Drawing.Size(978, 41);
             this.TablePanelCatalogueSort.TabIndex = 1;
             // 
             // label2
@@ -224,10 +216,9 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label2.Location = new System.Drawing.Point(4, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 50);
+            this.label2.Size = new System.Drawing.Size(93, 41);
             this.label2.TabIndex = 0;
             this.label2.Text = "Стоимость";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -237,10 +228,9 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label3.Location = new System.Drawing.Point(328, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(226, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 50);
+            this.label3.Size = new System.Drawing.Size(64, 41);
             this.label3.TabIndex = 1;
             this.label3.Text = "Скидка";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -250,10 +240,9 @@
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label4.Location = new System.Drawing.Point(579, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(435, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 50);
+            this.label4.Size = new System.Drawing.Size(89, 41);
             this.label4.TabIndex = 2;
             this.label4.Text = "Категория";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -263,10 +252,9 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label5.Location = new System.Drawing.Point(977, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(720, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 50);
+            this.label5.Size = new System.Drawing.Size(72, 41);
             this.label5.TabIndex = 3;
             this.label5.Text = "Поиск";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -279,10 +267,9 @@
             this.ComboBoxCost.Items.AddRange(new object[] {
             "Возрастает",
             "Убывает"});
-            this.ComboBoxCost.Location = new System.Drawing.Point(166, 4);
-            this.ComboBoxCost.Margin = new System.Windows.Forms.Padding(4);
+            this.ComboBoxCost.Location = new System.Drawing.Point(102, 3);
             this.ComboBoxCost.Name = "ComboBoxCost";
-            this.ComboBoxCost.Size = new System.Drawing.Size(154, 36);
+            this.ComboBoxCost.Size = new System.Drawing.Size(118, 31);
             this.ComboBoxCost.TabIndex = 4;
             this.ComboBoxCost.SelectedValueChanged += new System.EventHandler(this.ComboBoxCost_SelectedValueChanged);
             // 
@@ -296,10 +283,9 @@
             "0-10%",
             "11-14%",
             "15% и более"});
-            this.ComboBoxDiscount.Location = new System.Drawing.Point(415, 4);
-            this.ComboBoxDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.ComboBoxDiscount.Location = new System.Drawing.Point(296, 3);
             this.ComboBoxDiscount.Name = "ComboBoxDiscount";
-            this.ComboBoxDiscount.Size = new System.Drawing.Size(156, 36);
+            this.ComboBoxDiscount.Size = new System.Drawing.Size(133, 31);
             this.ComboBoxDiscount.TabIndex = 5;
             this.ComboBoxDiscount.SelectedValueChanged += new System.EventHandler(this.ComboBoxCost_SelectedValueChanged);
             // 
@@ -308,10 +294,9 @@
             this.ComboBoxCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ComboBoxCategory.Font = new System.Drawing.Font("Comic Sans MS", 12F);
             this.ComboBoxCategory.FormattingEnabled = true;
-            this.ComboBoxCategory.Location = new System.Drawing.Point(698, 4);
-            this.ComboBoxCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.ComboBoxCategory.Location = new System.Drawing.Point(530, 3);
             this.ComboBoxCategory.Name = "ComboBoxCategory";
-            this.ComboBoxCategory.Size = new System.Drawing.Size(271, 36);
+            this.ComboBoxCategory.Size = new System.Drawing.Size(184, 31);
             this.ComboBoxCategory.TabIndex = 6;
             this.ComboBoxCategory.SelectedValueChanged += new System.EventHandler(this.ComboBoxCost_SelectedValueChanged);
             // 
@@ -319,10 +304,9 @@
             // 
             this.TextBoxSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TextBoxSearch.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.TextBoxSearch.Location = new System.Drawing.Point(1062, 4);
-            this.TextBoxSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBoxSearch.Location = new System.Drawing.Point(798, 3);
             this.TextBoxSearch.Name = "TextBoxSearch";
-            this.TextBoxSearch.Size = new System.Drawing.Size(238, 35);
+            this.TextBoxSearch.Size = new System.Drawing.Size(177, 30);
             this.TextBoxSearch.TabIndex = 7;
             this.TextBoxSearch.TextChanged += new System.EventHandler(this.TextBoxSearch_TextChanged);
             // 
@@ -337,12 +321,11 @@
             this.ColumnDescription,
             this.ColumnDiscount});
             this.DGVCatalogue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DGVCatalogue.Location = new System.Drawing.Point(4, 120);
-            this.DGVCatalogue.Margin = new System.Windows.Forms.Padding(4);
+            this.DGVCatalogue.Location = new System.Drawing.Point(3, 97);
             this.DGVCatalogue.Name = "DGVCatalogue";
             this.DGVCatalogue.ReadOnly = true;
             this.DGVCatalogue.RowHeadersWidth = 51;
-            this.DGVCatalogue.Size = new System.Drawing.Size(1304, 457);
+            this.DGVCatalogue.Size = new System.Drawing.Size(978, 372);
             this.DGVCatalogue.TabIndex = 2;
             // 
             // ColumnPhoto
@@ -379,16 +362,15 @@
             // 
             // FormCatalogue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.TablePanelCatalogueMain);
             this.Controls.Add(this.TablePanelTempDown);
             this.Controls.Add(this.TablePanelTempUpper);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(1327, 728);
+            this.MinimumSize = new System.Drawing.Size(1000, 600);
             this.Name = "FormCatalogue";
             this.Text = "Каталог";
             this.Load += new System.EventHandler(this.FormCatalogue_Load);

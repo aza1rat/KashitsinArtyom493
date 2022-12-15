@@ -156,6 +156,7 @@
             this.ButtonAddNewProduct.TabIndex = 0;
             this.ButtonAddNewProduct.Text = "Добавить товар";
             this.ButtonAddNewProduct.UseVisualStyleBackColor = true;
+            this.ButtonAddNewProduct.Click += new System.EventHandler(this.ButtonAddNewProduct_Click);
             // 
             // TablePanelCatalogueMain
             // 
@@ -327,6 +328,7 @@
             this.DGVCatalogue.RowHeadersWidth = 51;
             this.DGVCatalogue.Size = new System.Drawing.Size(978, 372);
             this.DGVCatalogue.TabIndex = 2;
+            this.DGVCatalogue.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVCatalogue_CellDoubleClick);
             // 
             // ColumnPhoto
             // 

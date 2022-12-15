@@ -1,4 +1,4 @@
-﻿namespace OOO_Aromatny_Mir.A
+﻿namespace OOO_Aromatny_Mir.B
 {
     partial class FormTemplate
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OOO_Aromatny_Mir.A
+namespace OOO_Aromatny_Mir.B
 {
     public partial class FormTemplate : Form
     {

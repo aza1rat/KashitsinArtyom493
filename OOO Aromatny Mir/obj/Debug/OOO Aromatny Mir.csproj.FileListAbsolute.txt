@@ -16,4 +16,5 @@ C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny
 C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny Mir\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny Mir\obj\Debug\OOO Aromatny Mir.csproj.CopyComplete
 C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny Mir\obj\Debug\OOO_Aromatny_Mir.FormCatalogue.resources
-C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny Mir\obj\Debug\OOO_Aromatny_Mir.A.FormTemplate.resources
+C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny Mir\obj\Debug\OOO_Aromatny_Mir.FormChangeProduct.resources
+C:\Users\1\Documents\CSharp\тренировка 3\OOO Aromatny Mir\OOO Aromatny Mir\obj\Debug\OOO_Aromatny_Mir.B.FormTemplate.resources

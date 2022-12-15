@@ -69,7 +69,7 @@ namespace OOO_Aromatny_Mir
             DGVCatalogue.Rows.Clear();
             foreach (Entities.Product product in products)
             {
-                if (!(IsHaveLetter(product.ProductName, TextBoxSearch.Text)))
+                if (!(IsHaveLetter(product.ProductArticle, TextBoxSearch.Text)))
                     continue;
                 int viewID = DGVCatalogue.Rows.Add();
                 DGVCatalogue.Rows[viewID].Height = 150;
@@ -82,7 +82,7 @@ namespace OOO_Aromatny_Mir
                 else
                     DGVCatalogue.Rows[viewID].Cells[0].Value = (Bitmap)Resources.picture;
                 DGVCatalogue.Rows[viewID].Cells[0].Tag = product.ProductArticle;
-                DGVCatalogue.Rows[viewID].Cells[1].Value += "Наименование товара: " + product.ProductName +
+                DGVCatalogue.Rows[viewID].Cells[1].Value += "Наименование товара: " + product.ProductArticle +
                     Environment.NewLine + "Описание: " + Environment.NewLine + product.ProductDescription +
                     Environment.NewLine + "Производитель: " + product.Manufacturer.ManufacturerName +
                     Environment.NewLine + "Цена: " + product.ProductCost;
@@ -96,7 +96,8 @@ namespace OOO_Aromatny_Mir
                 if (product.ProductDiscount > 15)
                     DGVCatalogue.Rows[viewID].DefaultCellStyle.BackColor = Color.FromArgb(204, 102, 0);
             }
-
+            if (DGVCatalogue.RowCount == 0)
+                MessageBox.Show("Товаров не найдено","Поиск товаров", MessageBoxButtons.OK,MessageBoxIcon.Information);
             LabelProductCount.Text = $"Показано {DGVCatalogue.RowCount} из {Helper.ModelDB.Product.Count()}";
         }
 
@@ -141,6 +142,28 @@ namespace OOO_Aromatny_Mir
         private void ButtonCatalogueExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ButtonAddNewProduct_Click(object sender, EventArgs e)
+        {
+            FormChangeProduct formChangeProduct = new FormChangeProduct();
+            this.Hide();
+            formChangeProduct.ShowDialog();
+            this.Show();
+            FormCatalogue_Load(null, null);
+        }
+
+        private void DGVCatalogue_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            if (Helper.CurrentUser is null || Helper.CurrentUserRole != Helper.UserRole.Администратор)
+                return;
+            FormChangeProduct formChangeProduct = new FormChangeProduct(DGVCatalogue.Rows[e.RowIndex].Cells[0].Tag.ToString());
+            this.Hide();
+            formChangeProduct.ShowDialog();
+            this.Show();
+            FormCatalogue_Load(null, null);
         }
     }
 }
